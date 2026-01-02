@@ -25,7 +25,8 @@ wheels/
 
 # PyInstaller
 *.manifest
-*.spec
+# Keep our custom spec file
+!youtube_downloader.spec
 
 # IDE
 .vscode/
