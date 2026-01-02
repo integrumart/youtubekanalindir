@@ -1,6 +1,6 @@
 #!/bin/bash
 # YouTube Kanal İndirici Build Script (Linux/Mac)
-# Bu script uygulamayı .exe olarak derler (Windows için cross-compile)
+# Bu script uygulamayı binary olarak derler
 
 echo "========================================"
 echo "YouTube Kanal Indirici Build Script"

@@ -56,7 +56,7 @@ class YouTubeKanalIndirici:
         if SCREEN_READER_AVAILABLE and screen_reader:
             try:
                 screen_reader.speak(message)
-            except:
+            except Exception:
                 pass
         print(f"[Duyuru] {message}")
     
@@ -220,8 +220,8 @@ class YouTubeKanalIndirici:
             self.announce("Hata: Kanal linki girilmedi")
             return
         
-        # URL kontrolü
-        if not ("youtube.com" in url or "youtu.be" in url):
+        # URL kontrolü - YouTube kanal veya video linki
+        if not any(domain in url.lower() for domain in ["youtube.com/", "youtu.be/"]):
             messagebox.showerror(
                 "Hata",
                 "Geçerli bir YouTube linki girin!"
