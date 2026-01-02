@@ -1,0 +1,3 @@
+yt-dlp>=2023.12.30
+accessible-output2>=0.17
+pyinstaller>=6.3.0
